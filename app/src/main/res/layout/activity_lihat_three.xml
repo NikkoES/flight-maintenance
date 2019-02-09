@@ -1,0 +1,3452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/newbie"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="0dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".activity.result.ListThreeMonthActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Simulator Maintenance List"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Three Monthly Maintenance"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date                    :"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_mtanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:hint="Type a date"
+                    android:textColor="#000"
+                    android:inputType="date"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="2dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="214dp"
+                    android:layout_column="1"
+                    android:text="Simulator Type :"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_mtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/tipesimulator"
+                    android:padding="0dp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="@color/design_default_color_primary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="3dip"
+                    android:text="OPERATION"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:text="POWER"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="RESULT"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Electric Mechanical Motion (EMM)"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. EMM Motion base cleaninig"
+                    android:textSize="12dp" />
+                <RadioGroup
+                    android:id="@+id/rg_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m11ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m11nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="(No visible contamination)"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Motion cabinet cleaning/filter replaced"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_cabinet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m12ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m12nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="as required-Ref Mainteance manual"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Visual inspection of motion cabinet/EMA"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_inspection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m13ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m13nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="cables, switches and connections (componenent"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="must be undamaged and properly seated)"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. Measure the nitrogen preasure within the"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_measure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m14ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m14nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="cushin/snubber assembly (All jack) cushion"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="fully comprassed 160-10 Psi or 11,38-0,69"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="Bar-Ref Maintenace manual."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="5. Check all fans in the motion cabinet"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_motion_cabinet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m15ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m15nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="6. Check operation of EMO/EPO buttons"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_emo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m16ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m16nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="and circuit-Ref Maintenace manual."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="CONTROL LOADING SYSTEM"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Check the control loading sytem"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_loading_system"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m21ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m21nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="-REF Maintenance manual."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON/OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Accessway System"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Inspact, clean and lubricate the"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_inspact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m31ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m31nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="counter weight spring assemblies"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="and pivot hubs"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Check the power pack operation"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_power_pack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m32ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m32nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Test the safety interlock and STOP Button"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_safety"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m33ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m33nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. Lubricate the accesway pivot hubs"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_test1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m34ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m34nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air Conditioning"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Air Filter: for cleanliness"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m41ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m41nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Inspect the flexible hose between the air"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_flexible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m42ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m42nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="conditioner and flight compartment for"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="damage or excessive wear, especially at"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="damage or excessive wear, especially at"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="the point the hose contacts the floor "
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="OXYGEN SYSTEM"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Air Supply System"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_air"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m51ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m51nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Inspect the flexible hose between the air"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_felxible_hose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m52ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m52nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="System filter"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FUSALAGE"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Flight Deck"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="a) Nose wheel steering: Operate hand"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_wheel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m61aok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m611nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="wheel"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="b) Floor area: Clean and free from loose"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m61bok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m61bnok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="articles."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="c) Seat and Rails:"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1) Seat: Clean and Secure"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_clean_secure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m61c1ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m61c1nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2) Rails: Clean free from obstraction"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_rails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m61c2ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m61c2nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3) Seat Harness: Ensure harnesses"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_ensure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m61c3ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m61c3nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="are secure and lock correctly"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="d) Loose Equipment:Correctly stowed"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_loose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m61dok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m61dnok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="e) Spare fuses and bulbs"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_spare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m61eok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"/>
+
+                    <TextView
+                        android:id="@+id/tv_m61enok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="Correctly stowed"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="f) Lighting: Function correctly"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_correctly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m61fok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m61fnok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="g) Cooling air: Check adequatte supply"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_adequatte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m61gok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m61gnok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="from all louvers"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="h) Clean all instrument and IOS"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_instrument"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m61hok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m61hnok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="System from dusk"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Door Locks: Clean.inspact and lubricate"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_door_locks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m62ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m62nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Host Computer (Nodes and OpServer)"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Computer Nodes ,check for normal"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_computer_nodes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m71ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m71nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="operation"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Check all LAN connection are"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_lan_connection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m72ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m72nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="properly seated"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Fans:Check filter."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="a) Clean"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_clean1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m73aok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m73anok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="b) Change as required"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m73bok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m73bnok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. Clean the host computer system"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_clean_host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m74ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m74nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="floopy drive head using a cleaning cartridge"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="5. Delete unnecessary files from "
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m75ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m75nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="the Hard Drive(s)"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="6.Disk Back-Up as required"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_backup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m76ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m76nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="Ref maintenance manual"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="PRINTER"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Check for normal operation"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_for_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m81ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m81nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Clean Exterior and Interior"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_exterior"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m82ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m82nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Check availible off link"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_availible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m83ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m83nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. Set to ecomode"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_m84ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m84nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="SAFETY"
+            android:textColor="#000"
+            android:textSize="12dp" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Check the power supplies"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_supplies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m91ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_m91nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="on the VESDA fire detector system."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Check the operation of the"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_operation1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m92ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m92nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="Mechanical locking system on"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="crew accessway gate"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Test the operation of the"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m93ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m93nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="emergency lighting system"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. check the air sampling pipework"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_air_sampling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m94ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m94nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="on the VESDA Fire detection system."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Visual System"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Clean the air filter grills on every"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_filter_grills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m101ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m101nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="PC-bassed IG"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Clean OTW Projector filter"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_projector1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m102ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m102nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"/>
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Checked lamp hours/replaced"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_checked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m103ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m103nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="at required 1500 hrs or below 1800 hrs"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. Perform Geometry Calibration As"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_perform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m104ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m104nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="Required-Ref maintenace manual."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="5. perform auto calibration full"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_m105ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_m105nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="calibration-Ref maintenance manual"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:textColor="#000"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:id="@+id/tv_mchecked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Checked By"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_mapproved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Approved By"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/btn_save_monthly"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textColor="#fff"
+            android:text="SAVE"
+            android:textSize="12dp"
+            android:background="@color/design_default_color_primary"/>
+    </LinearLayout>
+</ScrollView>

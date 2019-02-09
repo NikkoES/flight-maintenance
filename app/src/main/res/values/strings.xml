@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Maintenance List</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string-array name="tipesimulator">
+        <item>A320-200</item>
+        <item>A330-300</item>
+        <item>B737-800 (NG1)</item>
+        <item>B737-800 (NG2)</item>
+        <item>ATR72-600</item>
+        <item>Clasic</item>
+    </string-array>
+    <string-array name="sp_information">
+        <item>Session 1</item>
+        <item>Session 2</item>
+        <item>Session 3</item>
+        <item>Session 4</item>
+        <item>Session 5</item>
+        <item>Session 6</item>
+    </string-array>
+</resources>

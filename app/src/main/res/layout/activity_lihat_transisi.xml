@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/newbie"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="0dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".activity.result.ListTransisiActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Simulator Maintenance"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Transition Check"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="1">
+
+            <TableRow  android:background="@color/design_default_color_primary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Date                   :"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:gravity="left"
+                    android:hint="Write here"
+                    android:padding="3dip"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:background="@color/design_default_color_primary">
+
+                <TextView
+                    android:layout_width="214dp"
+                    android:layout_column="1"
+                    android:layout_gravity="left"
+                    android:text="Simulator Type :"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:entries="@array/tipesimulator"
+                    android:padding="0dp"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="1. HOST COMPUTER"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:layout_column="1"
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="Normal Operation" />
+
+                <RadioGroup
+                    android:id="@+id/rg_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_11ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dip"/>
+
+                    <TextView
+                        android:id="@+id/tv_11nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="left"
+                    android:textColor="#000"
+                    android:padding="3dip"
+                    android:text="Printer for Nomal Operation" />
+
+                <RadioGroup
+                    android:id="@+id/rg_printer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_12ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_12nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:textColor="#000"
+                    android:text="Temprature" />
+
+                <TextView
+                    android:id="@+id/tv_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Celcius"
+                    android:textColorHint="#000"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:textColorHint="#000"
+                    android:textColor="#000"
+                    android:text="Humidity" />
+
+                <TextView
+                    android:id="@+id/tv_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="%"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="15dp" />
+
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="@color/design_default_color_primary">
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:textColor="#fff"
+                    android:text="2. Visula Scane Available" />
+
+                <RadioGroup
+                    android:id="@+id/rg_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_21ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_21nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="3. COCKPIT"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:textColor="#000"
+                    android:text="Indicators" />
+
+                <RadioGroup
+                    android:id="@+id/rg_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_31ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_31nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:textColor="#000"
+                    android:text="Lighting System" />
+
+                <RadioGroup
+                    android:id="@+id/rg_lighting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_32ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_32nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"/>
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:textColor="#000"
+                    android:text="Oxygen" />
+
+                <RadioGroup
+                    android:id="@+id/rg_oxygen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_33ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_33nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:textColor="#000"
+                    android:text="Clean op communication system" />
+
+                <RadioGroup
+                    android:id="@+id/rg_clean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_34ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_34nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:textColor="#000"
+                    android:text="Temperature" />
+
+                <TextView
+                    android:id="@+id/tv_35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Celcius"
+                    android:textColorHint="#000"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/design_default_color_primary"
+                android:stretchColumns="1">
+
+                <TextView
+                    android:layout_width="214dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="4. Control Loading Available"
+                    android:textColor="#fff"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_41ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_41nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/design_default_color_primary"
+                android:stretchColumns="1">
+
+                <TextView
+                    android:layout_width="214dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="5. Breaf Debrief"
+                    android:textColor="#fff"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_breaf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_51ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dip" />
+
+                    <TextView
+                        android:id="@+id/tv_51nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/design_default_color_primary"
+                android:stretchColumns="1">
+
+                <TextView
+                    android:layout_width="214dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="6. REMARK"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/tv_61"
+                    android:gravity="center"
+                    android:hint="Write here"
+                    android:padding="3dip"
+                    android:textColorHint="#FFF"
+                    android:textColor="#FFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/tv_checked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Checked By"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_approved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Approved By"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_savesesi1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/design_default_color_primary"
+            android:text="SAVE"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,3573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/newbie"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="0dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".activity.maintenance.MonthlyCheckActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Simulator Maintenance List"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Monthly Maintenance"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date                    :"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:textColor="#000"
+                    android:inputType="date"
+                    android:textSize="9dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="2dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:text="Simulator Type :"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_tipe_simulator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:textColor="#000"
+                    android:inputType="date"
+                    android:textSize="9dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="@color/design_default_color_primary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="3dip"
+                    android:text="OPERATION"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:text="POWER"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="RESULT"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Electric Mechanical Motion (EMM)"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. EMM Motion base cleaninig"
+                    android:textSize="12dp" />
+                <RadioGroup
+                    android:id="@+id/rg_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_base_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_base_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="(No visible contamination)"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Motion cabinet cleaning/filter replaced"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_cabinet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_cabinet_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_cabinet_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="as required-Ref Mainteance manual"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Visual inspection of motion cabinet/EMA"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_inspection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_inspection_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_inspection_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="cables, switches and connections (componenent"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="must be undamaged and properly seated)"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. Measure the nitrogen preasure within the"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_measure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_measure_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_measure_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="cushin/snubber assembly (All jack) cushion"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="fully comprassed 160-10 Psi or 11,38-0,69"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="Bar-Ref Maintenace manual."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="5. Check all fans in the motion cabinet"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_motion_cabinet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_motion_cabinet_ok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dip"
+                            android:text="OK" />
+
+                        <RadioButton
+                            android:id="@+id/rb_motion_cabinet_nok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dip"
+                            android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="6. Check operation of EMO/EPO buttons"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_emo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/rb_emo_ok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dip"
+                            android:text="OK" />
+
+                        <RadioButton
+                            android:id="@+id/rb_check_nok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dip"
+                            android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="and circuit-Ref Maintenace manual."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="CONTROL LOADING SYSTEM"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Check the control loading sytem"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_loading_system"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_loading_system_ok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dip"
+                            android:text="OK" />
+
+                        <RadioButton
+                            android:id="@+id/rb_loading_system_nok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dip"
+                            android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="-REF Maintenance manual."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON/OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accessway System"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Inspact, clean and lubricate the"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_inspact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_inspact_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_inspact_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="counter weight spring assemblies"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="and pivot hubs"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Check the power pack operation"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_power_pack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_power_pack_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_power_pack_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Test the safety interlock and STOP Button"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_safety"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_safety_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_safety_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. Lubricate the accesway pivot hubs"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_test1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_test1_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_test1_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Air Conditioning"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Air Filter: for cleanliness"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_filter_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_filter_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Inspect the flexible hose between the air"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_flexible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_flexible_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_flexible_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="conditioner and flight compartment for"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="damage or excessive wear, especially at"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="damage or excessive wear, especially at"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="the point the hose contacts the floor "
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="OXYGEN SYSTEM"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Air Supply System"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_air"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_air_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_air_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Inspect the flexible hose between the air"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_felxible_hose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_felxible_hose_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_felxible_hose_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="System filter"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FUSALAGE"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Flight Deck"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="a) Nose wheel steering: Operate hand"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_wheel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_wheel_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_hose_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="wheel"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="b) Floor area: Clean and free from loose"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_floor_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_floor_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="articles."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="c) Seat and Rails:"
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1) Seat: Clean and Secure"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_clean_secure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_clean_secure_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_clean_secure_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2) Rails: Clean free from obstraction"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_rails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_rails_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_seat_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3) Seat Harness: Ensure harnesses"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_ensure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_ensure_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_ensure_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="are secure and lock correctly"
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="d) Loose Equipment:Correctly stowed"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_loose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_loose_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_loose_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+            <TextView
+                android:textColor="#000"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="e) Spare fuses and bulbs"
+                android:textSize="12dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_spare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_spare_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="OK" />
+
+                <RadioButton
+                    android:id="@+id/rb_spare_nok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="NOK" />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="Correctly stowed"
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="f) Lighting: Function correctly"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_correctly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rb_correctly_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="OK" />
+
+                <RadioButton
+                    android:id="@+id/rb_correctly_nok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="g) Cooling air: Check adequatte supply"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_adequatte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_adequatte_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_adequatte_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="from all louvers"
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="h) Clean all instrument and IOS"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_instrument"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_instrument_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_instrument_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="System from dusk"
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Door Locks: Clean.inspact and lubricate"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_door_locks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_door_locks_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_door_locks_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Host Computer (Nodes and OpServer)"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Computer Nodes ,check for normal"
+                    android:textSize="12dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_computer_nodes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rb_computer_nodes_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="OK" />
+
+                <RadioButton
+                    android:id="@+id/rb_computer_nodes_nok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="NOK" />
+            </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="operation"
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Check all LAN connection are"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_lan_connection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_lan_connection_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_lan_connection_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="properly seated"
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Fans:Check filter."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="a) Clean"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_clean1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_clean1_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_clean1_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="b) Change as required"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_change_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_change_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. Clean the host computer system"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_clean_host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_clean_host_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_clean_host_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="floopy drive head using a cleaning cartridge"
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="5. Delete unnecessary files from "
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_delete_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_delete_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="the Hard Drive(s)"
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="6.Disk Back-Up as required"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_backup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_backup_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_backup_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="Ref maintenance manual"
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="PRINTER"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Check for normal operation"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_for_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_for_normal_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_for_normal_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Clean Exterior and Interior"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_exterior"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_exterior_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_exterior_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Check availible off link"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_availible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_availible_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_availible_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. Set to ecomode"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_set_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_set_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="SAFETY"
+            android:textColor="#000"
+            android:textSize="12dp" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Check the power supplies"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_supplies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_supplies_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_supplies_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="on the VESDA fire detector system."
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_vesda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_vesda_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_vesda_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Check the operation of the"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_operation1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_operation1_Ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_operation1_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="Mechanical locking system on"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="crew accessway gate"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Test the operation of the"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_test_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_test_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="emergency lighting system"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. check the air sampling pipework"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_air_sampling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_air_sampling_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_air_sampling_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="on the VESDA Fire detection system."
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Visual System"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="1. Clean the air filter grills on every"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_filter_grills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_filter_grills_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_filter_grills_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="PC-bassed IG"
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="2. Clean OTW Projector filter"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_projector1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_projector1_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_projector1_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="3. Checked lamp hours/replaced"
+                    android:textSize="12dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_checked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_checked_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_checked_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="at required 1500 hrs or below 1800 hrs"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : OFF"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="4. Perform Geometry Calibration As"
+                    android:textSize="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_perform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_perform_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="OK" />
+
+                    <RadioButton
+                        android:id="@+id/rb_perform_nok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip"
+                        android:text="NOK" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+        <TableRow android:background="#22ff">
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="Required-Ref maintenace manual."
+            android:textSize="12dp" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="5. perform auto calibration full"
+                    android:textSize="12dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rb_auto_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="OK" />
+
+                <RadioButton
+                    android:id="@+id/rb_auto_nok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="NOK" />
+            </RadioGroup>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="calibration-Ref maintenance manual"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="#22ff">
+
+                <TextView
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:textColor="#000"
+                    android:text="POWER : ON"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <EditText
+            android:id="@+id/edt_checked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Checked By"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/edt_approved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Approved By"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/btn_save_monthly"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/design_default_color_primary"
+            android:text="SAVE"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
